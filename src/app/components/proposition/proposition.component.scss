@@ -1,0 +1,143 @@
+.invoice {
+    // background-color: cornflowerblue;
+    height:1485mm;
+    width:210mm;
+}
+
+.backdrop {
+    background-color: #000000BB;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+.centermiddle {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.spinner {
+//    color:white !important;
+    // width:20px !important;
+    // height:20px !important;
+}
+.container {
+    color: darkblue;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.a4 {
+    height:297mm;
+    width:210mm;
+    position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: black;
+    // background-color: aqua;
+}
+
+
+.logos {
+    flex-direction: row;
+    display: inline-flex;
+}
+
+th {
+font-weight: normal;
+}
+
+.bandeau {
+    background-color: steelblue;
+    color:white;
+    height:1cm;
+    margin-top: .5cm;
+    margin-bottom: .2cm;
+    line-height: 1cm;
+}
+
+.bandeau.baq{
+    background-color: indigo;
+}
+.bandeau.bad{
+    background-color: limegreen;
+}
+.bandeau.mop{
+    background-color: orangered;
+}
+
+.ligne-container {
+margin-left: 0.2cm;
+
+}
+.ligne {
+    text-align: left;
+    line-height: 100%;
+    justify-content: space-around;
+    font-size: 11px;
+}
+.pdt {
+    width:40%;
+    font-weight: bold;
+    // text-align: left;
+}
+.tarif {
+    width:40%;
+    text-align: right;
+}
+.periodicite {
+    width:20%;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.divider {
+    height:1cm;//0.5cm
+}
+.mb-50 {
+    height: .5cm;
+}
+.mb-100 {
+    height: 1cm;
+}
+.mb-200 {
+    height: 2cm;
+}
+.mb-300 {
+    margin-bottom: 3cm;
+}
+.mb-500 {
+    height: 5cm;
+}
+.marginLR-50 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.absoluteRB {
+    position: absolute;
+    right:1cm;
+    bottom:1cm;
+}
+.justify {
+    width: 100%;
+    justify-content: space-evenly;
+}

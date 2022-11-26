@@ -1,0 +1,30 @@
+mat-checkbox {margin-right: 40px;}
+table {margin-top: 20px; width:100%;}
+.right {text-align: right;}
+.center {text-align: center;}
+.left {text-align: left;}
+.titre {background-color: lavender; font-weight: bold;}
+.sstitre {background-color: whitesmoke;font-style: italic;text-align: right !important;}
+
+.mat-header-cell {
+    padding: 0px 15px 0px 15px;
+}
+.mat-cell {
+    padding: 0px 15px 0px 15px;
+}
+.table_compte th {text-align: center;background-color: lightblue;}
+.table_compte td {text-align: center;}
+.table_compte .titre {text-align: left;}
+.table_compte mat-icon {color:forestgreen}
+.ok {background-color: lightgreen !important;}
+.w-15 {width:15%;}
+
+.barcode {
+    font-family: 'Libre Barcode 128', cursive;
+    font-size: xxx-large;
+    margin-top: 2rem;
+    margin-bottom: auto;
+}
+
+.verticalspace {margin-top:20px}
+// .paddLR {margin-left:5px; margin-right:5px}

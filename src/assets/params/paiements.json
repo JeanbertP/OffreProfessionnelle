@@ -1,0 +1,128 @@
+[
+    {
+        "categ": "Credit Cards",
+        "situation": "visu",
+        "besoin": "- What are your needs ? A card with a payment limit of up to €4K/month and simplified insurance and assistance guarantees?",
+        "solution": "Product A1",
+        "aide": "visabusiness",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Credit Cards",
+        "situation": "visu",
+        "besoin": "- What are your needs ? A card with a payment ceiling of up to €8,000/month and insurance and assistance guarantees extended to your employees and when travelling ?",
+        "solution": "Product A2",
+        "aide": "visabusiness",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Credit Cards",
+        "situation": "visu",
+        "besoin": "- What are your needs ? A card with a payment ceiling of up to €12,000/month and top-of-the-range insurance and assistance guarantees, including a concierge service and replacement secretarial services ?",
+        "solution": "Product A3",
+        "aide": "acmeexcellence",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Credit Cards",
+        "situation": "visu",
+        "besoin": "- What are your needs ? A card with a personalized visual in the colors of your company ?",
+        "solution": "Any cards above",
+        "aide": "visabusiness",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Credit Cards",
+        "situation": "visu",
+        "besoin": "- What are your needs ? A card with a personalized visual in the colors of your company ?",
+        "solution": "Product A4",
+        "aide": "visabusiness",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Transfers",
+        "situation": "adist",
+        "besoin": "- What type of payment do you make by bank transfer (invoices, salaries, etc.) ? These transfers must be made in SEPA format.<br>- Do you make transfers up to €45K every 3 calendar days ?",
+        "solution": "Product A4 + option 'tier transfert'",
+        "aide": "acmeaccess",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Transfers",
+        "situation": "adist",
+        "besoin": "  - Would you like a flexible, secure management tool, allowing you to monitor order remittance operations by user ?<br>- Do you make regular transfers up to €45,000 every 3 calendar days ?<br>- Would you like to be able to delegate managing your remittances?<br>- Would you like to be able to electronically sign your remittances ?",
+        "solution": "Product A4 + strong authent",
+        "aide": "acmeespacepro",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Transfers",
+        "situation": "adist",
+        "besoin": "- Do you use a EBICS software ?",
+        "solution": "Product A5",
+        "aide": "ebicst",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Transfers",
+        "situation": "adist",
+        "besoin": "- Do you use several banking portals to manage your order remittances ?",
+        "solution": "Product A6",
+        "aide": "ebicst",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Withdrawals",
+        "situation": "visu",
+        "besoin": "- Do you plan to pay your professional taxes to the Public Treasury in PRLV B2B (VAT, corporate tax, payment of the PAS, etc.) ?",
+        "solution": "",
+        "aide": "",
+        "url": "",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Trading effects",
+        "situation": "visu",
+        "besoin": "- Would you like to simplify the payment of accepted items ? ",
+        "solution": "Product A7",
+        "aide": "",
+        "url": "",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Trading effects",
+        "situation": "adist",
+        "besoin": "- Would you like to give your instructions, independently, online ?",
+        "solution": "Product A8",
+        "aide": "acmeaccess",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Trading effects",
+        "situation": "adist",
+        "besoin": "- Would you like to delegate the management of your trade bills ?",
+        "solution": "Product A8 + pption 'Trading Effets'",
+        "aide": "acmeespacepro",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    },
+    {
+        "categ": "Trading effects",
+        "situation": "adist",
+        "besoin": "- Do you plan to give your instructions via EBICS ?",
+        "solution": "Product A9",
+        "aide": "ebicst",
+        "url": "https://neutralized.com",
+        "modeop": "First, create a ..."
+    }
+]

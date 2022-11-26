@@ -1,0 +1,20 @@
+[
+    {
+        "ag": "401",
+        "nom": "PARIS ONE",
+        "rue": "1 FIRST WAY",
+        "ville": "75001 PARIS"
+    },
+    {
+        "ag": "402",
+        "nom": "PARIS TWO",
+        "rue": "1 TER RUE CDG",
+        "ville": "75002 PARIS"
+    },
+    {
+        "ag": "406",
+        "nom": "PARIS BEAUBOURG",
+        "rue": "1 RUE LAMARTINE",
+        "ville": "75009 PARIS"
+    }
+]

@@ -1,0 +1,426 @@
+[
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 1",
+        "periodicite": "NA",
+        "saisielibre": false,
+        "tarif": "0 $",
+        "reductionTab": [
+            "None"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA"
+        ],
+        "tarifTab": [
+            "0 $"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 2",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "4,10 $",
+        "reductionTab": [
+            "None",
+            "0,50",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "4,10 $",
+            "2,05 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "4,10 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 3",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "6,70 $",
+        "reductionTab": [
+            "None",
+            "0,50",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "6,70 $",
+            "3,35 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "6,70 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 4",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "2,10 $",
+        "reductionTab": [
+            "None",
+            "0,50",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "2,10 $",
+            "1,10 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "2,10 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 5",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "19,89 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA",
+            "Biz Mgr / DA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "19,89 $",
+            "14,92 $",
+            "9,95 $",
+            "4,97 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "19,89 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 6",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "2,60 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz Mgr / DA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "2,60 $",
+            "1,95 $",
+            "1,30 $",
+            "0,65 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "2,60 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [
+            "MobileBank Product 8"
+        ],
+        "pdt": "MobileBank Product 7",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "2,60 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz Mgr / DA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "2,60 $",
+            "1,95 $",
+            "1,30 $",
+            "0,65 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "2,60 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 8",
+        "periodicite": "Unique",
+        "saisielibre": false,
+        "tarif": "20,90 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz Mgr / DA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "20,90 $",
+            "15,68 $",
+            "10,40 $",
+            "5,23 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "20,90 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [
+            "MobileBank Product 10"
+        ],
+        "pdt": "MobileBank Product 9",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "49,20 $ / 98,40 $ / 147,50 $",
+        "reductionTab": [
+            "None",
+            "Exo on subscription / None on consumption",
+            "50% on subscription / None on consumption",
+            "None on subscription / 50% on consumption",
+            "50% on subscription / Exo on consumption",
+            "Exo all"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [
+            "MobileBank Product 10",
+            "MobileBank Product 11"
+        ],
+        "delegataireTab": [
+            "NA",
+            "DR",
+            "Biz Mgr / DA",
+            "DR",
+            "DR",
+            "DR"
+        ],
+        "tarifTab": [
+            "49,20 $ / 98,40 $ / 147,50 $",
+            "Free",
+            "24,60 $ / 49,20 $ / 73,75 $",
+            "49,20 $ / 98,40 $ / 147,50 $",
+            "24,60 $ / 49,20 $ / 73,75 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "49,20 $ / 98,40 $ / 147,50 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 10",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "0,72 $",
+        "reductionTab": [
+            "None",
+            "Exo on subscription / None on consumption",
+            "50% on subscription / None on consumption",
+            "None on subscription / 50% on consumption",
+            "50% on subscription / Exo on consumption",
+            "Exo all"
+        ],
+        "autoselectedreduction": true,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DR",
+            "Biz Mgr / DA",
+            "DR",
+            "DR",
+            "DR"
+        ],
+        "tarifTab": [
+            "0,72 $",
+            "0,72 $",
+            "0,72 $",
+            "0,36 $",
+            "Free",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,72 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 11",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "0,52 $",
+        "reductionTab": [
+            "None",
+            "Exo on subscription / None on consumption",
+            "50% on subscription / None on consumption",
+            "None on subscription / 50% on consumption",
+            "50% on subscription / Exo on consumption",
+            "Exo all"
+        ],
+        "autoselectedreduction": true,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DR",
+            "Biz Mgr / DA",
+            "DR",
+            "DR",
+            "DR"
+        ],
+        "tarifTab": [
+            "0,52 $",
+            "0,52 $",
+            "0,52 $",
+            "0,36 $",
+            "Free",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,52 $"
+    },
+    {
+        "categorie": "BAD",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "MobileBank Product 12",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "29,30 $",
+        "reductionTab": [
+            "None",
+            "0,10",
+            "0,20",
+            "0,30",
+            "0,40",
+            "0,50",
+            "0,60",
+            "0,70",
+            "0,80",
+            "0,90",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "Conseiller Pro / RA Pro",
+            "Conseiller Pro / RA Pro",
+            "Biz Mgr / DA",
+            "Biz Mgr / DA",
+            "Biz Mgr / DA",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DR/Adjoint/Expert",
+            "DR/Adjoint/Expert",
+            "DR/Adjoint/Expert"
+        ],
+        "tarifTab": [
+            "29,30 $",
+            "26,37 $",
+            "23,44 $",
+            "20,51 $",
+            "17,58 $",
+            "14,65 $",
+            "11,72 $",
+            "8,79 $",
+            "5,86 $",
+            "2,93 $",
+            "Free"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "29,30 $"
+    }
+]

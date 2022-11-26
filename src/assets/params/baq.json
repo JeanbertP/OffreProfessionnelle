@@ -1,0 +1,236 @@
+[
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": true,
+        "selectable": true,
+        "pdtassocies": [
+            ""
+        ],
+        "pdt": "Structural fee",
+        "periodicite": "Quaterly",
+        "saisielibre": false,
+        "tarif": "0,11 %",
+        "reductionTab": [
+            "None",
+            "0,5",
+            "0,75",
+            "Exo",
+            "OK Crefident",
+            "RFS"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [
+            ""
+        ],
+        "delegataireTab": [
+            "NA",
+            "DGA/DA Pro",
+            "DR/Assistant/expert",
+            "DDR",
+            "NA",
+            "According agreement"
+        ],
+        "tarifTab": [
+            "0,11 %",
+            "0,055 %",
+            "0,0275 %",
+            "Free",
+            "Free",
+            "To define"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,11 %"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": true,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Account fee",
+        "periodicite": "Quaterly",
+        "saisielibre": false,
+        "tarif": "62 $",
+        "reductionTab": [
+            "None",
+            "0,5",
+            "0,50+Eco",
+            "Exo",
+            "OK Crefident",
+            "RFS"
+        ],
+        "tarifTab": [
+            "62 $",
+            "31 $",
+            "31 $",
+            "Free",
+            "Free",
+            "To define"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DGA/DA Pro",
+            "DR/Assistant/Expert",
+            "DDR",
+            "NA",
+            "According agreement"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "62 $"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Credit card Business",
+        "periodicite": "Annual",
+        "saisielibre": false,
+        "tarif": "61 $",
+        "reductionTab": [
+            "None",
+            "0,2",
+            "0,5",
+            "OK Crefident"
+        ],
+        "tarifTab": [
+            "61 $",
+            "48,80 $",
+            "30,50 $",
+            "30,50 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro/RA Pro",
+            "DGA/DA Pro",
+            "CA Pro/DA",
+            "NA"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "61 $"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Visa Gold Business",
+        "periodicite": "Annual",
+        "saisielibre": false,
+        "tarif": "143.50 $",
+        "reductionTab": [
+            "None",
+            "0,2",
+            "0,5",
+            "OK Crefident"
+        ],
+        "tarifTab": [
+            "143,50 $",
+            "114,80 $",
+            "71,75 $",
+            "71,75 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro/RA Pro",
+            "DGA/DA Pro",
+            "CA Pro/DA",
+            "NA"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "143,50 $"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Excellence Product",
+        "periodicite": "Annual",
+        "saisielibre": false,
+        "tarif": "248 $",
+        "reductionTab": [
+            "None",
+            "0,2",
+            "0,5",
+            "OK Crefident"
+        ],
+        "tarifTab": [
+            "248 $",
+            "199,20 $",
+            "124,50 $",
+            "124,50 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro/RA Pro",
+            "DGA/DA Pro",
+            "CA Pro/DA",
+            "NA"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "248 $"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Credit Card Change",
+        "periodicite": "Annual",
+        "saisielibre": false,
+        "tarif": "40 $",
+        "reductionTab": [
+            "None",
+            "Avec Carte HDG",
+            "0,5",
+            "Exo"
+        ],
+        "tarifTab": [
+            "40 $",
+            "20 $",
+            "20 $",
+            "Free"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "NA",
+            "DR",
+            "DDR"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "40 $"
+    },
+    {
+        "categorie": "BAQ",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Business Insurance",
+        "periodicite": "Annual",
+        "saisielibre": false,
+        "tarif": "53 $",
+        "reductionTab": [
+            "None"
+        ],
+        "tarifTab": [
+            "53 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            ""
+        ],
+        "delegataire": "",
+        "tarifreel": "53 $"
+    }
+]

@@ -1,0 +1,766 @@
+[
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [
+            "Monetics product 2",
+            "Monetics product 3",
+            "Monetics product 4"
+        ],
+        "pdt": "Monetics product 1",
+        "periodicite": "Monthly",
+        "tarif": "NA",
+        "saisielibre": false,
+        "outils": [
+            {
+                "nom": "Simulator",
+                "url": "https://neutralize.abc"
+            },
+            {
+                "nom": "Free Pro Package",
+                "url": "https://neutralize.abc"
+            }
+        ],
+        "reductionTab": [
+            "General practitioner",
+            "Crefindent Accredited Dentist",
+            "Specialist (excluding surgery and radiologist) ",
+            "Nurse / Midwife",
+            "Physiotherapist / Podiatrist",
+            "Free entry"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [
+            "Monetics product 2",
+            "Monetics product 3"
+        ],
+        "delegataireTab": [],
+        "tarifTab": [
+            "20 $*",
+            "19,50 $*",
+            "35 $*",
+            "13 $*",
+            "13 $*",
+            "% *"
+        ],
+        "delegataire": "",
+        "tarifreel": "20 $*"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 2",
+        "periodicite": "",
+        "tarif": "NA",
+        "saisielibre": false,
+        "outils": [
+            {
+                "nom": "Simulator",
+                "url": "https://neutralize.abc"
+            },
+            {
+                "nom": "Free Pro Package",
+                "url": "https://neutralize.abc"
+            }
+        ],
+        "reductionTab": [
+            "General practitioner",
+            "Crefindent Accredited Dentist",
+            "Specialist (excluding surgery and radiologist) ",
+            "Nurse / Midwife",
+            "Physiotherapist / Podiatrist",
+            "Free entry"
+        ],
+        "autoselectedreduction": true,
+        "autoselectedreductiondependance": true,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "tarifTab": [
+            "20 $*",
+            "19,50 $*",
+            "35 $*",
+            "13 $*",
+            "13 $*",
+            "% *"
+        ],
+        "delegataire": "",
+        "tarifreel": "20 $*"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 3",
+        "periodicite": "",
+        "tarif": "NA",
+        "saisielibre": false,
+        "outils": [
+            {
+                "nom": "Simulator",
+                "url": "https://neutralize.abc"
+            },
+            {
+                "nom": "Free Pro Package",
+                "url": "https://neutralize.abc"
+            }
+        ],
+        "reductionTab": [
+            "General practitioner",
+            "Crefindent Accredited Dentist",
+            "Specialist (excluding surgery and radiologist) ",
+            "Nurse / Midwife",
+            "Physiotherapist / Podiatrist",
+            "Free entry"
+        ],
+        "autoselectedreduction": true,
+        "autoselectedreductiondependance": true,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "tarifTab": [
+            "20 $*",
+            "19,50 $*",
+            "35 $*",
+            "13 $*",
+            "13 $*",
+            "% *"
+        ],
+        "delegataire": "",
+        "tarifreel": "20 $*"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 4",
+        "periodicite": "Unique",
+        "tarif": "According to equipment chosen with our partners",
+        "saisielibre": false,
+        "outils": [
+            {
+                "nom": "Product JDC",
+                "url": "https://neutralize.abc"
+            },
+            {
+                "nom": "Product AVEM",
+                "url": "https://neutralize.abc"
+            }
+        ],
+        "reductionTab": [
+            "Not Eligible Welcome Offer",
+            "Eligible Welcome Offer"
+        ],
+        "tarifTab": [
+            "According to equipment chosen with our partners",
+            "3 Month free"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "According to equipment chosen with our partners"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 5",
+        "periodicite": "Unique",
+        "saisielibre": false,
+        "tarif": "29 $* device purchase + 1,75 % per transaction",
+        "outils": [],
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "29 $* device purchase + 1,75 % per transaction"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 6",
+        "periodicite": "None",
+        "saisielibre": false,
+        "tarif": "3,20%",
+        "reductionTab": [
+            "Not Eligible Welcome Offer",
+            "Eligible Welcome Offer"
+        ],
+        "tarifTab": [
+            "3,20 %",
+            "3,20 % + Free Soft Inst."
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "3,20 %"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 7",
+        "periodicite": "None",
+        "saisielibre": false,
+        "tarif": "1%",
+        "reductionTab": [
+            "Non Eligible Crefident",
+            "Eligible Crefident"
+        ],
+        "tarifTab": [
+            "1 %",
+            "0,50 %"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "1 %"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 8",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "4,60 $",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "4,60 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 9",
+        "periodicite": "",
+        "saisielibre": false,
+        "tarif": "Depending on the offer selected with our partner",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "Depending on the offer selected with our partner"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 10",
+        "periodicite": "",
+        "saisielibre": false,
+        "tarif": "Depending on the offer selected with our partner",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "Depending on the offer selected with our partner"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [
+            "Monetics product 11.1",
+            "Monetics product 11.2"
+        ],
+        "pdt": "Monetics product 11",
+        "periodicite": "Unique",
+        "saisielibre": false,
+        "tarif": "306 $",
+        "reductionTab": [
+            "None",
+            "0,50",
+            "Eligible Welcome Offer"
+        ],
+        "tarifTab": [
+            "306 $",
+            "153 $",
+            "153 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "DDR",
+            "NA"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "306 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 11.1",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "16,30 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "Exo"
+        ],
+        "tarifTab": [
+            "16,30 $",
+            "12,23 $",
+            "8,15 $",
+            "0 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz mgr / DA",
+            "DR/Assistant DR/Experts"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "16,30 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 11.2",
+        "periodicite": "Per Transaction",
+        "saisielibre": false,
+        "tarif": "0,16 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "Exo"
+        ],
+        "tarifTab": [
+            "0,16 $",
+            "0,04 $",
+            "0,08 $",
+            "0 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz mgr / DA",
+            "DR/Assistant DR/Experts"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,16 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 12",
+        "periodicite": "Unique",
+        "saisielibre": false,
+        "tarif": "2 040 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "tarifTab": [
+            "2 040 $",
+            "1 530 $",
+            "1 020 $",
+            "510 $",
+            "0 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DR/Assistant DR/Experts"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "2 040 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 13",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "25,50 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "tarifTab": [
+            "25,50 $",
+            "19,13 $",
+            "12,75 $",
+            "6,38 $",
+            "0 $"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA Pro",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DR/Assistant DR/Experts"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "25,50 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 14",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "36,72 $",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "36,72 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [
+            "Monetics product 15.1",
+            "Monetics product 15.2"
+        ],
+        "pdt": "Monetics product 15",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "3,40 $",
+        "reductionTab": [
+            "None",
+            "0,25",
+            "0,50",
+            "0,75",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "CC Pro / RA",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DDR"
+        ],
+        "tarifTab": [
+            "3,40 $",
+            "2,55 $",
+            "1,70 $",
+            "0,85 $",
+            "Offert"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "3,40 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 15.1",
+        "periodicite": "By discount",
+        "saisielibre": false,
+        "tarif": "4,80 $",
+        "reductionTab": [
+            "None",
+            "0,10",
+            "0,20",
+            "0,30",
+            "0,40",
+            "0,50",
+            "0,60",
+            "0,70",
+            "0,80",
+            "0,90",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "Biz mgr / DA",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DR/Assistant/Expert",
+            "DR/Assistant/Expert",
+            "DDR",
+            "DDR",
+            "DDR"
+        ],
+        "tarifTab": [
+            "4,80 $",
+            "4,32 $",
+            "3,84 $",
+            "3,36 $",
+            "2,88 $",
+            "2,40 $",
+            "1,92 $",
+            "1,44 $",
+            "0,96 $",
+            "0,48 $",
+            "Offert"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "4,80 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": false,
+        "pdtassocies": [],
+        "pdt": "Monetics product 15.2",
+        "periodicite": "By bill",
+        "saisielibre": false,
+        "tarif": "0,57 $",
+        "reductionTab": [
+            "None",
+            "0,10",
+            "0,20",
+            "0,30",
+            "0,40",
+            "0,50",
+            "0,60",
+            "0,70",
+            "0,80",
+            "0,90",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "Biz mgr / DA",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DR/Assistant/Expert",
+            "DR/Assistant/Expert",
+            "DDR",
+            "DDR",
+            "DDR"
+        ],
+        "tarifTab": [
+            "0,57 $",
+            "0,51 $",
+            "0,46 $",
+            "0,40 $",
+            "0,34 $",
+            "0,29 $",
+            "0,23 $",
+            "0,17 $",
+            "0,11 $",
+            "0,06 $",
+            "Offert"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,57 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 16",
+        "periodicite": "By transfer",
+        "saisielibre": false,
+        "tarif": "0,22 $",
+        "reductionTab": [
+            "None",
+            "0,10",
+            "0,20",
+            "0,30",
+            "0,40",
+            "0,50",
+            "0,60",
+            "0,70",
+            "0,80",
+            "0,90",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "Biz mgr / DA",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DR/Assistant/Expert",
+            "DR/Assistant/Expert",
+            "DDR",
+            "DDR",
+            "DDR"
+        ],
+        "tarifTab": [
+            "0,22 $",
+            "0,20 $",
+            "0,18 $",
+            "0,15 $",
+            "0,13 $",
+            "0,11 $",
+            "0,09 $",
+            "0,07 $",
+            "0,04 $",
+            "0,02 $",
+            "Offert"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,22 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 17",
+        "periodicite": "Par prélèvement",
+        "saisielibre": false,
+        "tarif": "0,45 $",
+        "reductionTab": [
+            "None",
+            "0,10",
+            "0,20",
+            "0,30",
+            "0,40",
+            "0,50",
+            "0,60",
+            "0,70",
+            "0,80",
+            "0,90",
+            "Exo"
+        ],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [
+            "NA",
+            "Biz mgr / DA",
+            "Biz mgr / DA",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DGA/DA Pro",
+            "DR/Assistant/Expert",
+            "DR/Assistant/Expert",
+            "DDR",
+            "DDR",
+            "DDR"
+        ],
+        "tarifTab": [
+            "0,45 $",
+            "0,41 $",
+            "0,36 $",
+            "0,32 $",
+            "0,27 $",
+            "0,23 $",
+            "0,18 $",
+            "0,14 $",
+            "0,09 $",
+            "0,05 $",
+            "Offert"
+        ],
+        "delegataire": "NA",
+        "tarifreel": "0,45 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 18",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "16,50 $",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "16,50 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 19",
+        "periodicite": "Monthly",
+        "saisielibre": false,
+        "tarif": "27,50 $",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "27,50 $"
+    },
+    {
+        "categorie": "MOP",
+        "autoselectedpdt": false,
+        "selectable": true,
+        "pdtassocies": [],
+        "pdt": "Monetics product 20",
+        "periodicite": "Unique",
+        "saisielibre": false,
+        "tarif": "75 $",
+        "reductionTab": [],
+        "tarifTab": [],
+        "autoselectedreduction": false,
+        "reductionsassociees": [],
+        "delegataireTab": [],
+        "delegataire": "",
+        "tarifreel": "75 $"
+    }
+]

@@ -1,0 +1,257 @@
+<form class="form-container">
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Proposal made by </strong>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{infosService.infos.prenomCollab}} {{infosService.infos.nomCollab}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div *ngIf="infosService.infos.ca*infosService.infos.mvmtConfie<500">
+            <mat-card class="warning">According the capitalization, we recommend a custom option</mat-card>
+        </div>
+        <div *ngIf="infosService.infos.ca*infosService.infos.mvmtConfie>=500">
+            <mat-card class="warning">According the capitalization, we recommend a detailled pricing</mat-card>
+        </div>
+        <div>
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Nom collaborateur" name="nomCollab"
+                    [(ngModel)]="infosService.infos.nomCollab" (blur)="setMail()">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Surname</mat-label>
+                <input matInput placeholder="Prénom collaborateur" name="prenomCollab"
+                    [(ngModel)]="infosService.infos.prenomCollab" (blur)="setMail()">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Mail</mat-label>
+                <input matInput placeholder="Mail collaborateur" name="nomCollab" name="mailCollab"
+                    [(ngModel)]="infosService.infos.mailCollab">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="Téléphone collaborateur" name="telCollab"
+                    [(ngModel)]="infosService.infos.telCollab">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Adviser unit</mat-label>
+                <input matInput placeholder="Agence" name="agenceCollab" [(ngModel)]="infosService.infos.agenceCollab">
+            </mat-form-field>
+        </div>
+        <div>
+            <a mat-raised-button href="https://neutralized.com" target="_blank" color="primary">Delegates</a>
+            &nbsp;
+            <a mat-raised-button href="https://neutralized.com" target="_blank" color="primary">Special conditions</a>
+            &nbsp;
+            <a mat-raised-button href="neutralized.com" target="_blank" color="accent">Smart Credit Card</a>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>My daily bank</strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+            <table mat-table [dataSource]="dataSourceBAQ" class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef> &nbsp; </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (change)="inOutBasket($event, row,'BAQ')" [checked]="isInBasket( row,'BAQ')"
+                            [disabled]="row.autoselectedpdt==true" [class.hide]="row.selectable==false">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="pdt">
+                    <th mat-header-cell *matHeaderCellDef> Product </th>
+                    <td mat-cell *matCellDef="let element"> {{element.pdt}} </td>
+                </ng-container>
+                <ng-container matColumnDef="periodicite">
+                    <th mat-header-cell *matHeaderCellDef> Periodicity </th>
+                    <td mat-cell *matCellDef="let element"> {{element.periodicite}}
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="tarif">
+                    <th mat-header-cell *matHeaderCellDef> Standard Price </th>
+                    <td mat-cell *matCellDef="let element">{{element.tarif}}</td>
+                </ng-container>
+                <ng-container matColumnDef="reduction">
+                    <th mat-header-cell *matHeaderCellDef>Custom reduction</th>
+                    <td mat-cell *matCellDef="let element; let i = index">
+                        <mat-form-field appearance="fill" [class.hide]="element.autoselectedreduction==true">
+                            <mat-select id="reductionBAQ{{element.pdt}}" value={{element.reductionTab[element.reductionindex||0]}}
+                                (selectionChange)="reductionSelection($event,element,i,'BAQ')">
+                                <mat-option *ngFor="let v of element.reductionTab" value={{v}}>{{v}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="delegataire">
+                    <th mat-header-cell *matHeaderCellDef>Delegates</th>
+                    <td mat-cell *matCellDef="let element">{{element.delegataire}}</td>
+                </ng-container>
+                <ng-container matColumnDef="tarifreel">
+                    <th mat-header-cell *matHeaderCellDef>Custom price</th>
+                    <td mat-cell *matCellDef="let element">
+                        <span *ngIf="element.saisielibre==false">{{element.tarifreel}}</span>
+                        <mat-form-field appearance="fill" *ngIf="element.saisielibre==true">
+                            <input id="tarifBAQ{{element.pdt}}" matInput [(ngModel)]="element.tarifreel" name="tarifBAQ{{element.pdt}}"
+                                value="{{element.tarifreel}}">
+                        </mat-form-field>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedBAQColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedBAQColumns;"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>My online bank</strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+            <table mat-table [dataSource]="dataSourceBAD" class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef> &nbsp; </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()" (change)="inOutBasket($event, row,'BAD')"
+                            [checked]="isInBasket( row,'BAD')" [disabled]="row.autoselectedpdt==true"
+                            [class.hide]="row.selectable==false">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="pdt">
+                    <th mat-header-cell *matHeaderCellDef> Product </th>
+                    <td mat-cell *matCellDef="let element"> {{element.pdt}} </td>
+                </ng-container>
+                <ng-container matColumnDef="periodicite">
+                    <th mat-header-cell *matHeaderCellDef> Periodicity </th>
+                    <td mat-cell *matCellDef="let element"> {{element.periodicite}}
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="tarif">
+                    <th mat-header-cell *matHeaderCellDef> Standard price </th>
+                    <td mat-cell *matCellDef="let element">{{element.tarif}}</td>
+                </ng-container>
+                <ng-container matColumnDef="reduction">
+                    <th mat-header-cell *matHeaderCellDef>Custom reduction</th>
+                    <td mat-cell *matCellDef="let element; let i = index"
+                        [class.hide]="element.autoselectedreduction==true"
+                        [attr.rowspan]="element.reductionsassociees.length>0?element.reductionsassociees.length+1:-1">
+                        <mat-form-field appearance="fill">
+                            <mat-select id="reductionBAD{{element.pdt}}" value={{element.reductionTab[element.reductionindex||0]}}
+                                (selectionChange)="reductionSelection($event,element,i,'BAD')">
+                                <mat-option *ngFor="let v of element.reductionTab" value={{v}}>{{v}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="delegataire">
+                    <th mat-header-cell *matHeaderCellDef>Delegates</th>
+                    <td mat-cell *matCellDef="let element">{{element.delegataire}}</td>
+                </ng-container>
+                <ng-container matColumnDef="tarifreel">
+                    <th mat-header-cell *matHeaderCellDef>Custom price</th>
+                    <td mat-cell *matCellDef="let element">{{element.tarifreel}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedBADColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedBADColumns;"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Mes Payment Operations</strong>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+            <table mat-table [dataSource]="dataSourceMOP" class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef> &nbsp; </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()" (change)="inOutBasket($event, row,'MOP')"
+                            [checked]="isInBasket( row,'MOP')" [disabled]="row.autoselectedpdt==true"
+                            [class.hide]="row.selectable==false">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="pdt">
+                    <th mat-header-cell *matHeaderCellDef> Product </th>
+                    <td mat-cell *matCellDef="let element"> {{element.pdt}}</td>
+                </ng-container>
+                <ng-container matColumnDef="periodicite">
+                    <th mat-header-cell *matHeaderCellDef> Periodicity </th>
+                    <td mat-cell *matCellDef="let element"> {{element.periodicite}}
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="tarif">
+                    <th mat-header-cell *matHeaderCellDef> Standard price </th>
+                    <td mat-cell *matCellDef="let element">{{element.tarif}}
+                        <div *ngIf="element.outils!=null && element.outils.length>0">
+                            <div *ngFor="let o of element.outils">
+                                <a href="{{o.url}}" target="_blank">{{o.nom}}</a>
+                            </div>
+                        </div>
+                    </td>
+
+
+                </ng-container>
+                <ng-container matColumnDef="reduction">
+                    <th mat-header-cell *matHeaderCellDef>Custom Reduction</th>
+                    <td mat-cell *matCellDef="let element; let i = index">
+                        <span *ngIf="element.reductionTab.length>0">
+                            <mat-form-field appearance="fill" [class.hide]="element.autoselectedreduction==true">
+                                <mat-select id="reductionMOP{{element.pdt}}" value={{element.reductionTab[element.reductionindex||0]}}
+                                    (selectionChange)="reductionSelection($event,element,i,'MOP')">
+                                    <mat-option *ngFor="let v of element.reductionTab" value={{v}}>{{v}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </span>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="delegataire">
+                    <th mat-header-cell *matHeaderCellDef>Délégataire</th>
+                    <td mat-cell *matCellDef="let element">{{element.delegataire}}</td>
+                </ng-container>
+                <ng-container matColumnDef="tarifreel">
+                    <th mat-header-cell *matHeaderCellDef>Custom price</th>
+                    <td mat-cell *matCellDef="let element">
+                        <span *ngIf="element.saisielibre==false">{{element.tarifreel}}</span>
+                        <span *ngIf="element.saisielibre==true">
+                            <mat-form-field appearance="fill">
+                                <input id="tarifMOP{{element.pdt}}" matInput [(ngModel)]="element.tarifreel" name="tarifMOP{{element.pdt}}"
+                                value="{{element.tarifreel}}">
+                            </mat-form-field>
+                        </span>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedMOPColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedMOPColumns;"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+
+    <div>* Commissions soumises à TVA</div>
+</form>

@@ -1,0 +1,137 @@
+[
+  {
+    "categ": "Credit cards",
+    "situation": "visu",
+    "besoin": "Would you like to offer payment by credit card, which will allow you to develop your turnover, secure and accelerate your receipts?",
+    "solution": "Bank Product #1",
+    "aide": "monemdeproximite",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Credit cards",
+    "situation": "visu",
+    "besoin": "Your customers want to pay you in installments by credit card and you want to be credited quickly",
+    "solution": "Bank Product #2",
+    "aide": "3xcb",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Credit cards",
+    "situation": "visu",
+    "besoin": "You are healthcare professionals, your patients ask you for a deferred payment until they are reimbursed and you want to be credited immediately",
+    "solution": "Bank Product #3",
+    "aide": "débitdifferesante",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Credit cards",
+    "situation": "onclt",
+    "besoin": "Did you know that your smartphone can also be used to cash your payments by credit card?",
+    "solution": "Bank Product #4",
+    "aide": "monemmobile",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Credit cards",
+    "situation": "ws",
+    "besoin": "You make online sales or you intend to develop your sales through the Internet: Do you want to secure your receipts and payments from your customers online ?",
+    "solution": "Bank Product #5",
+    "aide": "sherlocksouepaiementesecurise",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Credit cards",
+    "situation": "ws",
+    "besoin": "You want to accept payments by Credit cards by Email, SMS, chat...",
+    "solution": "Bank Product #6",
+    "aide": "",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Cash",
+    "situation": "visu",
+    "besoin": "You wish to be able to delegate to one of your employees the deposit of cash in our dedicated cash machines",
+    "solution": "Bank Product #7",
+    "aide": "cartelibreecran",
+    "url": "",
+    "modeop": ""
+  },
+  {
+    "categ": "Cash",
+    "situation": "visu",
+    "besoin": "You wish to exchange currency without delay via our dedicated machines",
+    "solution": "Bank Product #8",
+    "aide": "",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Trading effects",
+    "situation": "visu",
+    "besoin": " Would you like to have your bills financed before their due dates (discount)?<br>- In order to reduce the cost & time of collection, I recommend the \"commercial bill\" option of our Espace Pro offer. What do you think ?",
+    "solution": "No specialized product",
+    "aide": "",
+    "url": "",
+    "modeop": ""
+  },
+  {
+    "categ": "Trading effects",
+    "situation": "adist",
+    "besoin": "Would you like to have your effects financed before their due dates (discount) ?",
+    "solution": "Bank Product #9",
+    "aide": "acmeespacepro",
+    "url": "",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Transfers/Withdrawals",
+    "situation": "visu",
+    "besoin": "Medical analysis laboratories, pharmacists, biologists, what have you put in place to manage third-party payment reimbursements for you ?",
+    "solution": "Bank Product #10",
+    "aide": "",
+    "url": "https://neutralized.com",
+    "modeop": ""
+  },
+  {
+    "categ": "Transfers/Withdrawals",
+    "situation": "visu_ws",
+    "besoin": "You are healthcare professionals and you wish to simplify the collection of your fees. With our partner Paymed, I offer you simple and secure solutions for your management of third-party payment, the collection of your fees remotely and the equipment of your bank and/or vital card reader adapted to your activity.",
+    "solution": "Bank Product #11",
+    "aide": "",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Transfers/Withdrawals",
+    "situation": "adist",
+    "besoin": "- Your activity requires recurring collections (e.g. subscription management)<br>Do you have tools to issue direct debits and manage the associated mandates?<br>If this is not the case, ACME SEPA Direct Debit Solution can meet your needs.",
+    "solution": "Bank Product #12",
+    "aide": "acmesolutionprelevementssepa",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Transfers/Withdrawals",
+    "situation": "adist",
+    "besoin": "-Are you required to make regular payments / collections, in 'mass' (by file and not by entry)?<br>- Do you want to automate the recovery of your account statements or unpaid bills and thus optimize your bank reconciliations ?",
+    "solution": "Bank Product #13",
+    "aide": "ebicst",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  },
+  {
+    "categ": "Checks",
+    "situation": "visu",
+    "besoin": "Get in more than 20 000 check / yeas ?",
+    "solution": "Bulk Customer Check",
+    "aide": "",
+    "url": "https://neutralized.com",
+    "modeop": "First, create a ..."
+  }
+]

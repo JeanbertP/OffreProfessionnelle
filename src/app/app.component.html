@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <span>Simulateur Diagnostic Flux Professionnel</span>
+  <span class="example-spacer"></span>
+
+  <label for="fichier">
+    <a mat-raised-button color="primary">
+      <mat-icon aria-hidden="false" aria-label="">file_upload</mat-icon>
+      <span> Load</span>
+    </a>
+    <input hidden name="fichier" id="fichier" type="file" (change)="chooseFile($event)" />
+  </label>
+  <span class="mr-5"></span>
+  <button mat-raised-button color="primary" (click)="save()">
+    <mat-icon class="icon" aria-hidden="false" aria-label="">file_download</mat-icon>
+    Save
+  </button>
+</mat-toolbar>
+
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a mat-tab-link (click)="activeLink = 'diagnostic'" [active]="activeLink == 'diagnostic'"
+    [routerLink]="['diagnostic']"> Diagnostic </a>
+  <a mat-tab-link (click)="activeLink = 'tarification'" [active]="activeLink == 'tarification'"
+    [routerLink]="['tarification']"> Pricing help </a>
+  <a mat-tab-link (click)="activeLink = 'proposition'" [active]="activeLink == 'proposition'"
+    [routerLink]="['proposition']"> Proposal </a>
+</nav>
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>

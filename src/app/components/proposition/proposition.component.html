@@ -1,0 +1,206 @@
+<div *ngIf="inProgress" class="backdrop">
+    <div class="centermiddle">
+        <mat-spinner class="spinner" color="warn"></mat-spinner>
+    </div>
+</div>
+<div class="right">
+    <button mat-raised-button color="primary" (click)="generatePDF()">
+        Générer le PDF
+    </button>
+</div>
+
+<div class="invoice" id="invoice" #invoice>
+    <div class="container">
+        <div class="a4 center">
+            <p class="mb-100"></p>
+
+            <h1 class="">{{infosService.infos.RS||"Unknown company"}}</h1>
+            <p class="mb-100"></p>
+            <h1>Your custom proposal</h1>
+            <h1> "Flows & Services"</h1>
+            <p class="mb-100"></p>
+            <div>
+                <img src='assets/images/pagegarde.png' alt="" />
+            </div>
+
+            <div class="logos">
+                <div><img src='assets/images/logo.png' alt="" /></div>
+            </div>
+            <div class="absoluteRB">
+                Document date : {{today|date:"dd/MM/YYYY"}}
+            </div>
+        </div>
+        <div class="a4 center">
+            <p class="mb-200"></p>
+            <h2 class="bold">ACME - ACME would like to support you</h2>
+            <h2 class="bold">in the development of your business</h2>
+            <p class="mb-50"></p>
+            <p class="">and offers to process an agreed volume of flows up to {{infosService.infos.mvmtConfie}} &percnt; de votre chiffre d'affaires</p>
+            <p class="mb-50"></p>
+            <p class="">In this spirit of partnership and transparency, we present to you</p>
+            <p class="">our personalized global offer that meets your needs</p>
+            <p class="">in terms of Flows & Services.</p>
+            <p class="mb-100"></p>
+            <p class="mb-100"></p>
+
+            <p class="underline">This commercial offer is valid until :{{finProposition|date:"dd/MM/YYYY"}}</p>
+            <p class="mb-100"></p>
+
+            <div class="marginLR-50">
+                <p class="italic">The prices indicated in this document are expressed excluding taxes. Added to this,
+                when due, VAT at the rate in effect on the date of the transaction. The commissions subject to
+                VAT are indicated by a reference at the bottom of the page.<br>Value dates are an element of
+                invoicing of the operations to which they relate.</p>
+                <p class=""></p>
+                <p class="italic">If our offer is made within the framework of a canvassing act or follows a
+                canvassing, you have a period of 14 calendar days to withdraw
+                free of charge from the conclusion of the contract(s).</p>
+                <p class=""></p>
+                <p class="italic">The conditions included in this offer fall under the General Provisions of
+                bank-Customers of professionals and small businesses as well as the General Conditions
+                specific to each product or service concerned.<br>In the event of discrepancies, the conditions of the offer
+                will prevail over these.</p>
+            </div>
+
+            <p class="mb-100"></p>
+            <div class="logos">
+                <div><img src='assets/images/logo.png' alt="" /></div>
+            </div>
+        </div>
+        <div class="a4 center">
+            <p class="mb-200"></p>
+            <h1 class="">A dedicated team by your side</h1>
+            <p class="mb-50"></p>
+            <div class="bandeau">{{getLibelleAgence()}}</div>
+            <div class="">{{getRueAgence()}}</div>
+            <div class="">{{getVilleAgence()}}</div>
+
+            <div class="bandeau">Your advisor</div>
+            <div class="bold">
+                {{this.infosService.infos.prenomCollab}} {{this.infosService.infos.nomCollab}}
+            </div>
+            <div class="">
+                {{this.infosService.infos.mailCollab}}
+            </div>
+            <div class="">
+                {{this.infosService.infos.telCollab}}
+            </div>
+            <div class="bandeau">Your support services</div>
+            <div class="">
+                provide after-sales service on all ACME solutions made available to you.
+            </div>
+
+            <div class="bandeau">Contact</div>
+            <div class="">
+                TEL: 0 123 45 67 89 / Choice #1
+            </div>
+            <div class="">
+                Customer Mailbox : ABCD_EFGH@acme.fr
+            </div>
+            <div class="bandeau">ACME PRO Contact</div>
+            <div class="">TEL: 0 123 98 76 54 / Choice #2</div>
+
+            <div class="bandeau">ACME AS Service</div>
+            <div class="">TEL: 0 987 65 43 21 / Choix #3</div>
+
+            <div class="bandeau">ACME SEPA SOLUTION</div>
+            <div class="">TEL: 0 741 85 96 25 / Choice #4</div>
+
+            <div class="bandeau">ACME Assistance</div>
+            <div class="">TEL: 0 369 25 58 14</div>
+
+            <p class="mb-100"></p>
+            <div class="logos">
+                <div><img src='assets/images/logo.png' alt="" /></div>
+            </div>
+        </div>
+
+        <div class="a4 center">
+            <p class="mb-50"></p>
+            <p class="right">This commercial offer is valid until :{{finProposition|date:"dd/MM/YYYY"}}</p>
+            <p class="mb-50"></p>
+
+            <div class="ligne-container">
+                <table width="100%" align="center">
+                    <caption>&nbsp;</caption>
+                    <tr class="bandeau baq">
+                        <th colspan="3">My daily Bank</th>
+                    </tr>
+                    <tr class="ligne" *ngFor="let elt of getCatBasket('BAQ')">
+                        <td class="pdt bold">{{elt.pdt}}</td>
+                        <td class="tarif">{{elt.tarifreel}}</td>
+                        <td class="periodicite">{{elt.periodicite}}</td>
+                    </tr>
+                    <tr class="divider">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr class="bandeau bad">
+                        <td colspan="3">My online Bank</td>
+                    </tr>
+                    <tr class="ligne" *ngFor="let elt of getCatBasket('BAD')">
+                        <td class="pdt bold">{{elt.pdt}}</td>
+                        <td class="tarif">{{elt.tarifreel}}</td>
+                        <td class="periodicite">{{elt.periodicite}}</td>
+                    </tr>
+                    <tr class="divider">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr class="bandeau mop">
+                        <td colspan="3">My Payment Operations</td>
+                    </tr>
+                    <tr class="ligne" *ngFor="let elt of getCatBasket('MOP')">
+                        <td class="pdt bold">{{elt.pdt}}</td>
+                        <td class="tarif" *ngIf="elt.autoselectedreductiondependance==true">""</td>
+                        <td class="tarif" *ngIf="elt.autoselectedreductiondependance!=true">{{elt.tarifreel}}</td>
+                        <td class="periodicite" *ngIf="elt.autoselectedreductiondependance==true">""</td>
+                        <td class="periodicite" *ngIf="elt.autoselectedreductiondependance!=true">{{elt.periodicite}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="absoluteRB">
+                * Commissions subject to VAT
+            </div>
+        </div>
+
+
+
+        <div class="a4 center">
+            <p class="mb-500"></p>
+            <p class=" marginLR-50 bold">
+                We sincerely hope that our proposal will meet your expectations and win your membership.
+            </p>
+            <p class="mb-50"></p>
+            <p class="marginLR-50 bold">
+                We confirm our availability for any additional information that you would like obtain under this proposal and who could help you in your decision-making decision.
+            </p>
+            <p class="mb-300"></p>
+            <div>
+                <div class="logos ">
+                    <div><img src='assets/images/mabanque.png' alt="" /></div>
+                </div>
+            </div>
+            <p class="mb-50"></p>
+            <div>
+                <div class="logos  justify">
+                    <div><img src='assets/images/monconseiller.png' alt="" /></div>
+                    <div><img src='assets/images/toutenpoche.png' alt="" /></div>
+                    <div><img src='assets/images/monespacepersonnel.png' alt="" /></div>
+                </div>
+            </div>
+            <p class="mb-50"></p>
+            <div>
+                <div class="logos">
+                    <div><img src='assets/images/reseauxsociaux.png' alt="" /></div>
+                </div>
+            </div>
+            <p class="mb-50"></p>
+
+            <div class="logos">
+                <div><img src='assets/images/logo.png' alt="" /></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

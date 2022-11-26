@@ -1,0 +1,695 @@
+<form class="form-container">
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Customer</strong>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{infosService.infos.RS}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+            <div>
+                <p class="barcode">*12345678*</p>
+                *12345678*
+            </div>
+            <div>
+                <p class="barcode">{{calculateICI()}}</p>
+                {{calculateICI()}}
+            </div>
+        </div>
+        <div class="verticalspace"></div>
+        <div>
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Appointment date</mat-label>
+                <input matInput [matDatepicker]="dateRdv" [formControl]="dateRdvFormControl" placeholder="JJ/MM/SSAA"
+                    [(ngModel)]="infosService.infos.dateRdv">
+                <mat-datepicker-toggle matSuffix [for]="dateRdv"></mat-datepicker-toggle>
+                <mat-datepicker #dateRdv></mat-datepicker>
+                <mat-error *ngIf="dateRdvFormControl.hasError('required')">
+                    The date must not be empty</mat-error>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Personal name or Company name</mat-label>
+                <input type="text" matInput [formControl]="RSFormControl" [(ngModel)]="infosService.infos.RS">
+                <mat-error *ngIf="RSFormControl.hasError('required')">
+                    The name cannt be empty</mat-error>
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Unit</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.iciAgence" name="iciAgence">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Account</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.iciCompte" name="iciCompte">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>CRC</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.iciLC" name="iciLC">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Activity</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.activite" name="activite">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Capital (K&euro;)</mat-label>
+                <input matInput type="number" [(ngModel)]="infosService.infos.ca" name="ca">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Number of employees</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.nbSalaries" name="nbSalaries">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Entrust flow (en &percnt;)</mat-label>
+                <input matInput type="number" min="0" max="100" [(ngModel)]="infosService.infos.mvmtConfie"
+                    name="mvmtConfie">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Other bank #1</mat-label>
+                <mat-select [(ngModel)]="infosService.infos.autresBq1" name="autresBq1">
+                    <mat-option *ngFor="let abq of infosService.getAutresBanques()" value="{{abq}}">{{abq}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>&percnt;</mat-label>
+                <input matInput type="number" min="0" max="100" [(ngModel)]="infosService.infos.mvmtAutresBq1"
+                    name="mvmtAutresBq1">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Other bank #2</mat-label>
+                <mat-select [(ngModel)]="infosService.infos.autresBq2" name="autresBq2">
+                    <mat-option *ngFor="let abq of infosService.getAutresBanques()" value="{{abq}}">{{abq}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>&percnt;</mat-label>
+                <input matInput type="number" min="0" max="100" [(ngModel)]="infosService.infos.mvmtAutresBq2"
+                    name="mvmtAutresBq2">
+            </mat-form-field>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Other bank #3</mat-label>
+                <mat-select [(ngModel)]="infosService.infos.autresBq3" name="autresBq3">
+                    <mat-option *ngFor="let abq of infosService.getAutresBanques()" value="{{abq}}">{{abq}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>&percnt;</mat-label>
+                <input matInput type="number" min="0" max="100" [(ngModel)]="infosService.infos.mvmtAutresBq3"
+                    name="mvmtAutresBq3">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Personnal client</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.cltATitrePerso" name="cltATitrePerso">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>CEO Status</mat-label>
+                <input matInput [(ngModel)]="infosService.infos.statutDirigeant" name="statutDirigeant">
+            </mat-form-field>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Simplify your receipts</strong> : You want to offer your customers to pay you by
+                :
+            </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+            <mat-checkbox *ngFor="let cat of infosService.getEncaissementCategories()" color="accent" id="e_{{cat}}"
+                (change)="applyEncaissementCategoryFilter($event)">
+                {{cat}}
+            </mat-checkbox>
+            <table *ngIf="this.encaissementCategoriesFilter.length>0" mat-table [dataSource]="dataSourceEncaissement"
+                class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef> &nbsp; </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()"
+                            (change)="$event ? selectionEncaissement.toggle(row) : null"
+                            [checked]="selectionEncaissement.isSelected(row)">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="categ">
+                    <th mat-header-cell *matHeaderCellDef> Type </th>
+                    <td mat-cell *matCellDef="let element"> {{element.categ}} </td>
+                </ng-container>
+                <ng-container matColumnDef="situation">
+                    <th mat-header-cell *matHeaderCellDef> Situation </th>
+                    <td mat-cell *matCellDef="let element"> <img src='assets/images/{{element.situation}}.png'
+                            width="40" alt=""/> </td>
+                </ng-container>
+                <ng-container matColumnDef="besoin">
+                    <th mat-header-cell *matHeaderCellDef> Need </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div [innerHTML]="element.besoin"></div>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="solution">
+                    <th mat-header-cell *matHeaderCellDef> Solution </th>
+                    <td mat-cell *matCellDef="let element">
+                        <mat-icon *ngIf="element.aide!=''"
+                            (click)="$event.stopPropagation();openHelpDialog(element.aide)">help</mat-icon>
+                        {{element.solution}}
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="url">
+                    <th mat-header-cell *matHeaderCellDef> Help </th>
+                    <td mat-cell *matCellDef="let element"> <a *ngIf="element.url!=''" href="{{element.url}}"
+                            target="_blank"><img class="paddLR" src='assets/images/b_outils.png' width="40" alt=""/></a></td>
+                </ng-container>
+                <ng-container matColumnDef="modeop">
+                    <th mat-header-cell *matHeaderCellDef> Modus operandi </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div [innerHTML]="element.modeop"></div>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedEncaissementColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedEncaissementColumns;"
+                    (click)="selectionEncaissement.toggle(row)"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Simplify your payments</strong> : You want to pay your suppliers, employees,
+                administration...
+                by :
+            </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+            <mat-checkbox *ngFor="let cat of infosService.getPaiementCategories()" color="accent" id="p_{{cat}}"
+                (change)="applyPaiementCategoryFilter($event)">
+                {{cat}}
+            </mat-checkbox>
+            <table *ngIf="this.paiementCategoriesFilter.length>0" mat-table [dataSource]="dataSourcePaiement"
+                class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef> &nbsp; </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()"
+                            (change)="$event ? selectionPaiement.toggle(row) : null"
+                            [checked]="selectionPaiement.isSelected(row)">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="categ">
+                    <th mat-header-cell *matHeaderCellDef> Type </th>
+                    <td mat-cell *matCellDef="let element"> {{element.categ}} </td>
+                </ng-container>
+                <ng-container matColumnDef="situation">
+                    <th mat-header-cell *matHeaderCellDef> Situation </th>
+                    <td mat-cell *matCellDef="let element"> <img src='assets/images/{{element.situation}}.png'
+                            width="40" alt=""/>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="besoin">
+                    <th mat-header-cell *matHeaderCellDef> Need </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div [innerHTML]="element.besoin"></div>
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="solution">
+                    <th mat-header-cell *matHeaderCellDef> Solution </th>
+                    <td mat-cell *matCellDef="let element">
+                        <mat-icon *ngIf="element.aide!='null'"
+                            (click)="$event.stopPropagation();openHelpDialog(element.aide)">help</mat-icon>
+                        {{element.solution}}
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="url">
+                    <th mat-header-cell *matHeaderCellDef> Help </th>
+                    <td mat-cell *matCellDef="let element"> <a href="{{element.url}}" target="_blank"><img
+                                src='assets/images/b_outils.png' width="40" alt=""/></a></td>
+                </ng-container>
+                <ng-container matColumnDef="modeop">
+                    <th mat-header-cell *matHeaderCellDef> Modus operandi </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div [innerHTML]="element.modeop"></div>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedPaiementColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedPaiementColumns;"
+                    (click)="selectionPaiement.toggle(row)"></tr>
+            </table>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Anticipate your cash flow needs</strong>
+            </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+            <table class="mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <tr class="titre">
+                    <th rowspan="2" id="col1"> Customers / Suppliers </th>
+                    <th colspan="2" id="col2"> Collections</th>
+                    <th colspan="2" id="col3"> Disbursements </th>
+                    <th rowspan="2" id="col4"> Your need for cash </th>
+                    <th rowspan="2" id="col5"> Our solutions </th>
+                </tr>
+                <tr class="titre">
+                    <th id="col6"> Part (&percnt;)</th>
+                    <th id="col7"> Time limit (j)</th>
+                    <th id="col8"> Part (&percnt;)</th>
+                    <th id="col9"> Time limit (j)</th>
+                </tr>
+
+                <tr>
+                    <td class="titre">Individuals</td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.particuliers_e_part" name="particuliers_e_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.particuliers_e_delai"
+                                name="particuliers_e_delai">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.particuliers_d_part" name="particuliers_d_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.particuliers_d_delai"
+                                name="particuliers_d_delai">
+                        </mat-form-field>
+                    </td>
+                    <td rowspan="4">You may need cash</td>
+                    <td rowspan="4">Our collection solutions, cash facility, discount, factoring, depreciable credit, ...</td>
+                </tr>
+
+                <tr>
+                    <td class="titre">Professionals</td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.professionnels_e_part" name="professionnels_e_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.professionnels_e_delai"
+                                name="professionnels_e_delai">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.professionnels_d_part" name="professionnels_d_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.professionnels_d_delai"
+                                name="professionnels_d_delai">
+                        </mat-form-field>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="titre">Administrations</td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.administrations_e_part" name="administrations_e_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.administrations_e_delai"
+                                name="administrations_e_delai">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" min="0" max="100"
+                                [(ngModel)]="infosService.infos.administrations_d_part" name="administrations_d_part">
+                        </mat-form-field>
+                    </td>
+                    <td class="right">
+                        <mat-form-field appearance="fill">
+                            <input matInput type="number" [(ngModel)]="infosService.infos.administrations_d_delai"
+                                name="administrations_d_delai">
+                        </mat-form-field>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="right titre">
+                        <strong>{{(infosService.infos.particuliers_e_part/100*infosService.infos.particuliers_e_delai)+(infosService.infos.professionnels_e_part/100*infosService.infos.professionnels_e_delai)+(infosService.infos.administrations_e_part/100*infosService.infos.administrations_e_delai)}}</strong>
+                    </td>
+                    <td></td>
+                    <td class="right titre">
+                        <strong>{{(infosService.infos.particuliers_d_part/100*infosService.infos.particuliers_d_delai)+(infosService.infos.professionnels_d_part/100*infosService.infos.professionnels_d_delai)+(infosService.infos.administrations_d_part/100*infosService.infos.administrations_d_delai)}}</strong>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <strong>Track/manage your accounts and banking transactions</strong> : You wish you could...
+            </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+            <mat-checkbox *ngFor="let cat of compteCategories;let index =index" color="accent" id="c_{{index}}"
+                (change)="applyCompteCategoryFilter($event)">
+                {{cat}}
+            </mat-checkbox>
+            <table class="table_compte mat-elevation-z8">
+                <caption>&nbsp;</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col class="w-15" [ngClass]="{'ok': isInComptesCategory('0')}">
+                    <col class="w-15" [ngClass]="{'ok': isInComptesCategory('1')||isInComptesCategory('3')}">
+                    <col class="w-15" [ngClass]="{'ok': isInComptesCategory('3')}">
+                    <col class="w-15" [ngClass]="{'ok': isInComptesCategory('2')}">
+                </colgroup>
+                <tr>
+                    <th colspan="2"> Needs (with options *) </th>
+                    <th>ACME product1</th>
+                    <th>ACME product2</th>
+                    <th>ACME product5</th>
+                    <th>EBICS</th>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="2"> Sign orders electronically </td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="2"> Assign personal authorizations to one or more collaborators </td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="2">Check their accounts</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="titre" rowspan="2">Retrieve his writings</td>
+                    <td class="sstitre">Digital</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">interbank (CFONDB)</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="6">Make and track your receipts</td>
+                </tr>
+                <tr>
+                    <td class="titre" rowspan="3">Bills to be cashed</td>
+                    <td class="sstitre">Return commercial papers</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Manage your list of third parties</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Check outstanding payments</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="titre right">Levy</td>
+                    <td class="sstitre">Return levy</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Check outstanding payments</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="6">Make and follow its payments</td>
+                </tr>
+                <tr>
+                    <td class="titre">Effects to pay</td>
+                    <td class="sstitre">Consult the debt bill to be paid and be able to give payment counter-orders
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>*
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titre" rowspan="3">Payment</td>
+                    <td class="sstitre">View direct debit authorizations</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sstitre">View direct debits from the account</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Delivery of orders</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titre" rowspan="7">Debits</td>
+                    <td class="sstitre">Make transfers in &euro; on accounts held by the client
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Make transfers in &euro; (SEPA zone)</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Manage your list of beneficiaries</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Submit confidential transfers in &euro; (SEPA zone)</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre">Submit transfers (outside the SEPA zone)</td>
+                    <td class="sstitre" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="sstitre right">unique, online input</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="sstitre right">multi-beneficiary, online input</td>
+                    <td></td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="titre" colspan="2">Manage your stock market portfolio</td>
+                    <td>
+                        <mat-icon>check_small</mat-icon> *
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="titre">Talk to your advisor</td>
+                    <td class="sstitre">Secure messaging, Appointment booking
+                    </td>
+                    <td>
+                        <mat-icon>check_small</mat-icon>
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </mat-expansion-panel>
+</form>
